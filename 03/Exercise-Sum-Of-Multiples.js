@@ -1,11 +1,11 @@
 function sum(limit) {
-  let sum = 0;
+  let count = 0;
 
-  for (let i = 0; i <= limit; i++) { 
-    if (i % 3 === 0 || i % 5 === 0)
-     sum += i;
+  for (let i = 0; i <= limit; i++) {
+    if (i % 3 === 0 || i % 5 === 0) count += i;
   }
-  return sum;
+
+  return count;
 }
 
-console.log(sum(5));
+console.log(sum(10));

@@ -1,12 +1,15 @@
-const tech = {
+const game = {
   id: 0,
-  title: "JavaScript",
-  level: "Good",
+  name: "DL",
+  releaseDate: "2023",
+  isReleased: false,
 };
+function showProp(obj) {
+  for (key in obj) {
+    if (typeof obj[key] === "string") {
+      console.log(key, obj[key]);
 
-function showProperties(obj) {
-  for (let key in obj)
-    if (typeof obj[key] === "string") console.log(key, obj[key]);
+    }
+  }
 }
-
-showProperties(tech);
+showProp(game);
